@@ -12,7 +12,7 @@
           </mesh>
         </geometry>
 
-        <plugin filename="ignition-gazebo-shader-param-system" name="ignition::gazebo::systems::ShaderParam">
+        <plugin filename="gz-sim-shader-param-system" name="gz::sim::systems::ShaderParam">
           <shader language="glsl">
             <vertex>materials/programs/GerstnerWaves_vs_330.glsl</vertex>
             <fragment>materials/programs/GerstnerWaves_fs_330.glsl</fragment>

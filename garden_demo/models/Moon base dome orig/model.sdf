@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+  <model name="moon_base_dome">
+    <static>true</static>
+    <link name="base_link">
+      <collision name="collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/MoonBaseDome.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/MoonBaseDome.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="outer_door_link_left">
+      <pose>1.087 117.589 5.195 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/MoonBaseSplitDoor.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/MoonBaseSplitDoor.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="outer_door_link_right">
+      <pose>-1.087 117.589 5.195 0 0 3.14159</pose>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/MoonBaseSplitDoor.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/MoonBaseSplitDoor.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="inner_door_link_left">
+      <pose>1.087 104.432 5.195 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/MoonBaseSplitDoor.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/MoonBaseSplitDoor.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="inner_door_link_right">
+      <pose>-1.087 104.432 5.195 0 0 3.14159</pose>
+      <collision name="collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/MoonBaseSplitDoor.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/MoonBaseSplitDoor.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="fan_01">
+      <pose>6.0 -85.217 8.88 0 0 0</pose>
+      <collision name="collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/MoonBaseFanBlade.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/MoonBaseFanBlade.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="fan_02">
+      <pose>-6 -85.217 8.88 0 0 0</pose>
+      <collision name="collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/MoonBaseFanBlade.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/MoonBaseFanBlade.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="fan_03">
+      <pose>6 85.217 8.88 0 0 0</pose>
+      <collision name="collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/MoonBaseFanBlade.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/MoonBaseFanBlade.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="fan_04">
+      <pose>6 85.217 8.88 0 0 0</pose>
+      <collision name="collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/MoonBaseFanBlade.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/MoonBaseFanBlade.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+  </model>
+</sdf>
