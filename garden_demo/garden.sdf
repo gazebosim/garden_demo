@@ -48,6 +48,10 @@
       <uri>
         Moon base dome
       </uri>
+      <experimental:params>
+        <collision element_id="main::DomePt01_collision" action="remove"/>
+        <collision element_id="main::DomePt02_collision" action="remove"/>
+      </experimental:params>
     </include>
 
     <include>
