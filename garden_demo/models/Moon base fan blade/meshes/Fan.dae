@@ -15,7 +15,7 @@
       <profile_COMMON>
         <newparam sid="Fan_Albedo_png-surface">
           <surface type="2D">
-            <init_from>Fan_Albedo_png</init_from>
+            <init_from>../materials/textures/Fan_Albedo_png</init_from>
           </surface>
         </newparam>
         <newparam sid="Fan_Albedo_png-sampler">

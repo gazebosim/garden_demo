@@ -206,66 +206,10 @@
       </visual>
     </link>
 
-    <link name="Fan1">
-      <pose>6.0 -85.217 8.88 0 0 0</pose>
-      <collision name="collision">
-        <geometry>
-          <mesh>
-            <uri>meshes/Fan/Fan.dae</uri>
-          </mesh>
-        </geometry>
-      </collision>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/Fan/Fan.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-    </link>
-    <link name="Fan2">
-      <pose>-6 -85.217 8.88 0 0 0</pose>
-      <collision name="collision">
-        <geometry>
-          <mesh>
-            <uri>meshes/Fan/Fan.dae</uri>
-          </mesh>
-        </geometry>
-      </collision>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/Fan/Fan.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-    </link>
     <joint name="world_joint" type="fixed">
       <parent>world</parent>
       <child>main</child>
     </joint>
-    <joint name="fan1_joint" type="revolute">
-      <parent>main</parent>
-      <child>Fan1</child>
-      <axis>
-        <xyz>0 1 0</xyz>
-      </axis>
-    </joint>
-    <joint name="fan2_joint" type="revolute">
-      <parent>main</parent>
-      <child>Fan2</child>
-      <axis>
-        <xyz>0 1 0</xyz>
-      </axis>
-    </joint>
-    <plugin filename="gz-sim-joint-controller-system" name="gz::sim::systems::JointController">
-      <joint_name>fan1_joint</joint_name>
-      <initial_velocity>5.0</initial_velocity>
-    </plugin>
-    <plugin filename="gz-sim-joint-controller-system" name="gz::sim::systems::JointController">
-      <joint_name>fan2_joint</joint_name>
-      <initial_velocity>5.0</initial_velocity>
-    </plugin>
 
   </model>
 </sdf>

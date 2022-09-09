@@ -64,5 +64,21 @@
       </uri>
     </include>
 
+    <include>
+      <name>Fan1</name>
+      <pose>6.0 -85.217 8.88 0 0 0</pose>
+      <uri>
+        Moon base fan blade
+      </uri>
+    </include>
+
+    <include>
+      <name>Fan2</name>
+      <pose>-6 -85.217 8.88 0 0 0</pose>
+      <uri>
+        Moon base fan blade
+      </uri>
+    </include>
+
   </world>
 </sdf>
