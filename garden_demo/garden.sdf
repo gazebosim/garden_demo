@@ -64,5 +64,32 @@
       </uri>
     </include>
 
+    <include>
+      <name>Fan1</name>
+      <pose>6.0 -85.217 8.88 0 0 0</pose>
+      <uri>
+        Moon base fan blade
+      </uri>
+      <experimental:params>
+        <!-- the collision reduces RTF -->
+        <collision element_id="Fan::collision" action="remove"/>
+        <plugin element_id="gz::sim::systems::JointController" action="modify">
+          <initial_velocity>4.5</initial_velocity>
+        </plugin>
+      </experimental:params>
+    </include>
+
+    <include>
+      <name>Fan2</name>
+      <pose>-6 -85.217 8.88 0 0 0</pose>
+      <uri>
+        Moon base fan blade
+      </uri>
+      <experimental:params>
+        <!-- the collision reduces RTF -->
+        <collision element_id="Fan::collision" action="remove"/>
+      </experimental:params>
+    </include>
+
   </world>
 </sdf>
