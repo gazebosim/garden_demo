@@ -41,7 +41,7 @@
   </library_effects>
   <library_images>
     <image id="BaseRamp_Albedo_png" name="BaseRamp_Albedo_png">
-      <init_from>BaseRamp_Albedo.png</init_from>
+      <init_from>../materials/textures/BaseRamp_Albedo.png</init_from>
     </image>
   </library_images>
   <library_materials>

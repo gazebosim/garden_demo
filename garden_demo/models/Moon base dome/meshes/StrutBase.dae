@@ -41,7 +41,7 @@
   </library_effects>
   <library_images>
     <image id="ModPlatformBase_Albedo_png" name="ModPlatformBase_Albedo_png">
-      <init_from>ModPlatformBase_Albedo.png</init_from>
+      <init_from>../materials/textures/ModPlatformBase_Albedo.png</init_from>
     </image>
   </library_images>
   <library_materials>
