@@ -42,7 +42,7 @@
     </joint>
     <plugin filename="gz-sim-joint-controller-system" name="gz::sim::systems::JointController">
       <joint_name>fan_joint</joint_name>
-      <initial_velocity>5.0</initial_velocity>
+      <initial_velocity>4.0</initial_velocity>
     </plugin>
   </model>
 </sdf>
