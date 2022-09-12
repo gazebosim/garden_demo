@@ -2,10 +2,32 @@
 
 <sdf version="1.9">
   <world name="Garden">
+    <!-- gravity of the moon -->
+    <gravity>0 0 -1.62</gravity>
+
     <scene>
-      <ambient>1.0 1.0 1.0</ambient>
-      <background>0.8 0.8 0.8</background>
+      <ambient>1.0 1.0 1.0 1.0</ambient>
+      <background>0.8 0.8 0.8 1.0</background>
+      <grid>false</grid>
     </scene>
+
+    <plugin
+      filename="gz-sim-physics-system"
+      name="gz::sim::systems::Physics">
+    </plugin>
+    <plugin
+      filename="gz-sim-sensors-system"
+      name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin
+      filename="gz-sim-user-commands-system"
+      name="gz::sim::systems::UserCommands">
+    </plugin>
+    <plugin
+      filename="gz-sim-scene-broadcaster-system"
+      name="gz::sim::systems::SceneBroadcaster">
+    </plugin>
 
     <light type="directional" name="sun">
       <cast_shadows>true</cast_shadows>
@@ -26,6 +48,10 @@
       <uri>
         Moon base dome
       </uri>
+      <experimental:params>
+        <collision element_id="main::DomePt01_collision" action="remove"/>
+        <collision element_id="main::DomePt02_collision" action="remove"/>
+      </experimental:params>
     </include>
 
     <include>
@@ -40,6 +66,33 @@
       <uri>
         Garden heightmap
       </uri>
+    </include>
+
+    <include>
+      <name>Fan1</name>
+      <pose>6.0 -85.217 8.88 0 0 0</pose>
+      <uri>
+        Moon base fan blade
+      </uri>
+      <experimental:params>
+        <!-- the collision reduces RTF -->
+        <collision element_id="Fan::collision" action="remove"/>
+        <plugin element_id="gz::sim::systems::JointController" action="modify">
+          <initial_velocity>4.5</initial_velocity>
+        </plugin>
+      </experimental:params>
+    </include>
+
+    <include>
+      <name>Fan2</name>
+      <pose>-6 -85.217 8.88 0 0 0</pose>
+      <uri>
+        Moon base fan blade
+      </uri>
+      <experimental:params>
+        <!-- the collision reduces RTF -->
+        <collision element_id="Fan::collision" action="remove"/>
+      </experimental:params>
     </include>
 
   </world>
