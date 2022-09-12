@@ -311,6 +311,64 @@
           </pbr>
         </material>
       </visual>
+
+      <collision name="InsideMainFloor_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/InsideMainFloor.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="InsideMainFloor_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/InsideMainFloor.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/InsideMainFloor_Albedo.png</albedo_map>
+              <metalness_map>materials/textures/InsideMainFloor_Metalness.png</metalness_map>
+              <normal_map>materials/textures/InsideMainFloor_Normal.png</normal_map>
+              <roughness_map>materials/textures/InsideMainFloor_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="InnerDome_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/InnerDome.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="InnerDome_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/InnerDome.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/InnerDome_Albedo.exr</albedo_map>
+              <emissive_map>materials/textures/InnerDome_Albedo.exr</emissive_map>
+              <metalness_map>materials/textures/InnerDome_Metalness.png</metalness_map>
+              <normal_map>materials/textures/InnerDome_Normal.png</normal_map>
+              <roughness_map>materials/textures/InnerDome_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
     </link>
 
     <link name="DoorLeft">
