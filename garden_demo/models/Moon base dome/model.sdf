@@ -742,6 +742,35 @@
         </material>
       </visual>
 
+     <collision name="LakeIsland_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/LakeIsland.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="LakeIsland_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/LakeIsland.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <!-- TODO add textures when ready -->
+          <!-- <pbr>
+            <metal>
+              <albedo_map>materials/textures/LakeIsland_Albedo.jpg</albedo_map>
+              <metalness_map>materials/textures/LakeIsland_Metalness.png</metalness_map>
+              <normal_map>materials/textures/LakeIsland_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/LakeIsland_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr> -->
+        </material>
+      </visual>
+
     </link>
 
     <link name="DoorLeft">
