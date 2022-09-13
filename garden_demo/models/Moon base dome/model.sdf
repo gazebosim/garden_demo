@@ -4,6 +4,8 @@
     <static>true</static>
 
     <link name="main">
+
+
       <collision name="BaseRamp_collision">
         <geometry>
           <mesh>
@@ -450,6 +452,291 @@
               <metalness_map>materials/textures/GardenUpperRailingRail_Metalness.png</metalness_map>
               <normal_map>materials/textures/GardenUpperRailingRail_Normal.jpg</normal_map>
               <roughness_map>materials/textures/GardenUpperRailingRail_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="IndoorEntryRamp_collision">
+        <!-- TODO simple shape -->
+        <geometry>
+          <mesh>
+            <uri>meshes/IndoorEntryRamp.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="IndoorEntryRamp_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/IndoorEntryRamp.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/IndoorEntryRamp_Albedo.jpg</albedo_map>
+              <metalness_map>materials/textures/IndoorEntryRamp_Metalness.png</metalness_map>
+              <normal_map>materials/textures/IndoorEntryRamp_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/IndoorEntryRamp_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="HexPlantPods_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/HexPlantPods.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="HexPlantPods_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/HexPlantPods.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/HexPlantPods_Albedo.jpg</albedo_map>
+              <metalness_map>materials/textures/HexPlantPods_Metalness.png</metalness_map>
+              <normal_map>materials/textures/HexPlantPods_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/HexPlantPods_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="IndoorRamp_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/IndoorRamp.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="IndoorRamp_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/IndoorRamp.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/IndoorRamp_Albedo.jpg</albedo_map>
+              <metalness_map>materials/textures/IndoorRamp_Metalness.jpg</metalness_map>
+              <normal_map>materials/textures/IndoorRamp_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/IndoorRamp_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="InnerWall_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/InnerWall.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="InnerWall_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/InnerWall.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/InnerWall_Albedo.jpg</albedo_map>
+              <metalness_map>materials/textures/InnerWall_Metalness.png</metalness_map>
+              <normal_map>materials/textures/InnerWall_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/InnerWall_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="InnerWallFrame_collision">
+        <!-- TODO may be able to remove collision -->
+        <geometry>
+          <mesh>
+            <uri>meshes/InnerWallFrame.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="InnerWallFrame_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/InnerWallFrame.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/InnerWallFrame_Albedo.jpg</albedo_map>
+              <metalness_map>materials/textures/InnerWallFrame_Metalness.png</metalness_map>
+              <normal_map>materials/textures/InnerWallFrame_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/InnerWallFrame_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="InnerWallTrim_collision">
+        <!-- TODO may be able to remove collision -->
+        <geometry>
+          <mesh>
+            <uri>meshes/InnerWallTrim.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="InnerWallTrim_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/InnerWallTrim.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/InnerWallTrim_Albedo.jpg</albedo_map>
+              <metalness_map>materials/textures/InnerWallTrim_Metalness.png</metalness_map>
+              <normal_map>materials/textures/InnerWallTrim_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/InnerWallTrim_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+     <collision name="InnerWallUpper_collision">
+       <!-- TODO may be able to remove collision -->
+        <geometry>
+          <mesh>
+            <uri>meshes/InnerWallUpper.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="InnerWallUpper_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/InnerWallUpper.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/InnerWallUpper_Albedo.jpg</albedo_map>
+              <metalness_map>materials/textures/InnerWallUpper_Metalness.png</metalness_map>
+              <normal_map>materials/textures/InnerWallUpper_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/InnerWallUpper_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+     <collision name="LakeRailing_collision">
+       <!-- TODO may be able to remove collision -->
+        <geometry>
+          <mesh>
+            <uri>meshes/LakeRailing.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="LakeRailing_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/LakeRailing.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/LakeRailing_Albedo.jpg</albedo_map>
+              <metalness_map>materials/textures/LakeRailing_Metalness.png</metalness_map>
+              <normal_map>materials/textures/LakeRailing_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/LakeRailing_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+     <collision name="PondWall_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/PondWall.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="PondWall_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/PondWall.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/PondWall_Albedo.jpg</albedo_map>
+              <metalness_map>materials/textures/PondWall_Metalness.png</metalness_map>
+              <normal_map>materials/textures/PondWall_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/PondWall_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+     <collision name="Steps_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/Steps.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="Steps_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/Steps.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Steps_Albedo.jpg</albedo_map>
+              <metalness_map>materials/textures/Steps_Metalness.png</metalness_map>
+              <normal_map>materials/textures/Steps_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/Steps_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
         </material>
