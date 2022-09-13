@@ -62,34 +62,6 @@
         </material>
       </visual>
 
-      <collision name="DomeOuter_collision">
-        <geometry>
-          <mesh>
-            <uri>meshes/DomeOuter.dae</uri>
-          </mesh>
-        </geometry>
-      </collision>
-      <visual name="DomeOuter_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/DomeOuter.dae</uri>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.8 0.8 0.8 1</ambient>
-          <diffuse>0.8 0.8 0.8 1</diffuse>
-          <specular>0.8 0.8 0.8 1</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/DomeOuter_Albedo.jpg</albedo_map>
-              <metalness_map>materials/textures/DomeOuter_Metalness.png</metalness_map>
-              <normal_map>materials/textures/DomeOuter_Normal.jpg</normal_map>
-              <roughness_map>materials/textures/DomeOuter_Roughness.jpg</roughness_map>
-            </metal>
-          </pbr>
-        </material>
-      </visual>
-
       <collision name="OutsideRamp_collision">
         <geometry>
           <mesh>
@@ -146,34 +118,6 @@
         </material>
       </visual>
 
-      <collision name="DomePt01_collision">
-        <geometry>
-          <mesh>
-            <uri>meshes/DomePt01.dae</uri>
-          </mesh>
-        </geometry>
-      </collision>
-      <visual name="DomePt01_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/DomePt01.dae</uri>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.8 0.8 0.8 1</ambient>
-          <diffuse>0.8 0.8 0.8 1</diffuse>
-          <specular>0.8 0.8 0.8 1</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/DomePt01_Albedo.jpg</albedo_map>
-              <metalness_map>materials/textures/DomePt01_Metalness.png</metalness_map>
-              <normal_map>materials/textures/DomePt01_Normal.jpg</normal_map>
-              <roughness_map>materials/textures/DomePt01_Roughness.jpg</roughness_map>
-            </metal>
-          </pbr>
-        </material>
-      </visual>
-
       <collision name="DualFanVent_collision">
         <geometry>
           <mesh>
@@ -202,33 +146,6 @@
         </material>
       </visual>
 
-      <collision name="DomePt02_collision">
-        <geometry>
-          <mesh>
-            <uri>meshes/DomePt02.dae</uri>
-          </mesh>
-        </geometry>
-      </collision>
-      <visual name="DomePt02_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/DomePt02.dae</uri>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.8 0.8 0.8 1</ambient>
-          <diffuse>0.8 0.8 0.8 1</diffuse>
-          <specular>0.8 0.8 0.8 1</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/DomePt02_Albedo.jpg</albedo_map>
-              <metalness_map>materials/textures/DomePt02_Metalness.png</metalness_map>
-              <normal_map>materials/textures/DomePt02_Normal.jpg</normal_map>
-              <roughness_map>materials/textures/DomePt02_Roughness.jpg</roughness_map>
-            </metal>
-          </pbr>
-        </material>
-      </visual>
 
       <collision name="OuterWallGate_collision">
         <geometry>
@@ -337,35 +254,6 @@
               <metalness_map>materials/textures/InsideMainFloor_Metalness.png</metalness_map>
               <normal_map>materials/textures/InsideMainFloor_Normal.jpg</normal_map>
               <roughness_map>materials/textures/InsideMainFloor_Roughness.jpg</roughness_map>
-            </metal>
-          </pbr>
-        </material>
-      </visual>
-
-      <collision name="InnerDome_collision">
-        <geometry>
-          <mesh>
-            <uri>meshes/InnerDome.dae</uri>
-          </mesh>
-        </geometry>
-      </collision>
-      <visual name="InnerDome_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/InnerDome.dae</uri>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.8 0.8 0.8 1</ambient>
-          <diffuse>0.8 0.8 0.8 1</diffuse>
-          <specular>0.8 0.8 0.8 1</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/InnerDome_Albedo.jpg</albedo_map>
-              <emissive_map>materials/textures/InnerDome_Emissive.jpg</emissive_map>
-              <metalness_map>materials/textures/InnerDome_Metalness.png</metalness_map>
-              <normal_map>materials/textures/InnerDome_Normal.jpg</normal_map>
-              <roughness_map>materials/textures/InnerDome_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
         </material>
@@ -829,6 +717,121 @@
               <metalness_map>materials/textures/Door_Metalness.png</metalness_map>
               <normal_map>materials/textures/Door_Normal.jpg</normal_map>
               <roughness_map>materials/textures/Door_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </link>
+
+    <link name="Dome">
+      <collision name="DomeOuter_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/DomeOuter.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="DomeOuter_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/DomeOuter.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/DomeOuter_Albedo.jpg</albedo_map>
+              <metalness_map>materials/textures/DomeOuter_Metalness.png</metalness_map>
+              <normal_map>materials/textures/DomeOuter_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/DomeOuter_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="DomePt01_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/DomePt01.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="DomePt01_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/DomePt01.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/DomePt01_Albedo.jpg</albedo_map>
+              <metalness_map>materials/textures/DomePt01_Metalness.png</metalness_map>
+              <normal_map>materials/textures/DomePt01_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/DomePt01_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="DomePt02_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/DomePt02.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="DomePt02_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/DomePt02.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/DomePt02_Albedo.jpg</albedo_map>
+              <metalness_map>materials/textures/DomePt02_Metalness.png</metalness_map>
+              <normal_map>materials/textures/DomePt02_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/DomePt02_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="InnerDome_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/InnerDome.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="InnerDome_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/InnerDome.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/InnerDome_Albedo.jpg</albedo_map>
+              <emissive_map>materials/textures/InnerDome_Emissive.jpg</emissive_map>
+              <metalness_map>materials/textures/InnerDome_Metalness.png</metalness_map>
+              <normal_map>materials/textures/InnerDome_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/InnerDome_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
         </material>
