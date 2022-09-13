@@ -359,11 +359,96 @@
           <specular>0.8 0.8 0.8 1</specular>
           <pbr>
             <metal>
-              <albedo_map>materials/textures/InnerDome_Albedo.exr</albedo_map>
-              <emissive_map>materials/textures/InnerDome_Albedo.exr</emissive_map>
+              <albedo_map>materials/textures/InnerDome_Albedo.png</albedo_map>
               <metalness_map>materials/textures/InnerDome_Metalness.png</metalness_map>
               <normal_map>materials/textures/InnerDome_Normal.png</normal_map>
               <roughness_map>materials/textures/InnerDome_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="GardenUpper_collision">
+        <!-- TODO these rail collsions may not be needed -->
+        <geometry>
+          <mesh>
+            <uri>meshes/GardenUpper.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="GardenUpper_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/GardenUpper.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/GardenUpper_Albedo.png</albedo_map>
+              <metalness_map>materials/textures/GardenUpper_Metalness.png</metalness_map>
+              <normal_map>materials/textures/GardenUpper_Normal.png</normal_map>
+              <roughness_map>materials/textures/GardenUpper_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="GardenUpperLevel_collision">
+        <!-- TODO this could use simple shapes for collisions -->
+        <geometry>
+          <mesh>
+            <uri>meshes/GardenUpperLevel.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="GardenUpperLevel_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/GardenUpperLevel.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/GardenUpperLevel_Albedo.png</albedo_map>
+              <metalness_map>materials/textures/GardenUpperLevel_Metalness.png</metalness_map>
+              <normal_map>materials/textures/GardenUpperLevel_Normal.png</normal_map>
+              <roughness_map>materials/textures/GardenUpperLevel_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="GardenUpperRailingRail_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/GardenUpperRailingRail.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="GardenUpperRailingRail_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/GardenUpperRailingRail.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/GardenUpperRailingRail_Albedo.png</albedo_map>
+              <metalness_map>materials/textures/GardenUpperRailingRail_Metalness.png</metalness_map>
+              <normal_map>materials/textures/GardenUpperRailingRail_Normal.png</normal_map>
+              <roughness_map>materials/textures/GardenUpperRailingRail_Roughness.png</roughness_map>
             </metal>
           </pbr>
         </material>
