@@ -360,6 +360,7 @@
           <pbr>
             <metal>
               <albedo_map>materials/textures/InnerDome_Albedo.jpg</albedo_map>
+              <emissive_map>materials/textures/InnerDome_Emissive.jpg</emissive_map>
               <metalness_map>materials/textures/InnerDome_Metalness.png</metalness_map>
               <normal_map>materials/textures/InnerDome_Normal.jpg</normal_map>
               <roughness_map>materials/textures/InnerDome_Roughness.jpg</roughness_map>
