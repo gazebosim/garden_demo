@@ -5,7 +5,6 @@
 
     <link name="main">
 
-
       <collision name="BaseRamp_collision">
         <geometry>
           <mesh>
@@ -260,7 +259,6 @@
       </visual>
 
       <collision name="GardenUpper_collision">
-        <!-- TODO these rail collsions may not be needed -->
         <geometry>
           <mesh>
             <uri>meshes/GardenUpper.dae</uri>
@@ -289,7 +287,6 @@
       </visual>
 
       <collision name="GardenUpperLevel_collision">
-        <!-- TODO this could use simple shapes for collisions -->
         <geometry>
           <mesh>
             <uri>meshes/GardenUpperLevel.dae</uri>
@@ -346,7 +343,6 @@
       </visual>
 
       <collision name="IndoorEntryRamp_collision">
-        <!-- TODO simple shape -->
         <geometry>
           <mesh>
             <uri>meshes/IndoorEntryRamp.dae</uri>
@@ -459,7 +455,6 @@
       </visual>
 
       <collision name="InnerWallFrame_collision">
-        <!-- TODO may be able to remove collision -->
         <geometry>
           <mesh>
             <uri>meshes/InnerWallFrame.dae</uri>
@@ -488,7 +483,6 @@
       </visual>
 
       <collision name="InnerWallTrim_collision">
-        <!-- TODO may be able to remove collision -->
         <geometry>
           <mesh>
             <uri>meshes/InnerWallTrim.dae</uri>
@@ -517,7 +511,6 @@
       </visual>
 
      <collision name="InnerWallUpper_collision">
-       <!-- TODO may be able to remove collision -->
         <geometry>
           <mesh>
             <uri>meshes/InnerWallUpper.dae</uri>
@@ -546,7 +539,6 @@
       </visual>
 
      <collision name="LakeRailing_collision">
-       <!-- TODO may be able to remove collision -->
         <geometry>
           <mesh>
             <uri>meshes/LakeRailing.dae</uri>
