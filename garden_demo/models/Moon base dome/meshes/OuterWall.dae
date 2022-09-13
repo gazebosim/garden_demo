@@ -41,7 +41,7 @@
   </library_effects>
   <library_images>
     <image id="OuterWall_Albedo_png" name="OuterWall_Albedo_png">
-      <init_from>../materials/textures/OuterWall_Albedo.png</init_from>
+      <init_from>../materials/textures/OuterWall_Albedo.jpg</init_from>
     </image>
   </library_images>
   <library_materials>

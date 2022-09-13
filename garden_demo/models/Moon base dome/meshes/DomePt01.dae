@@ -41,7 +41,7 @@
   </library_effects>
   <library_images>
     <image id="DomePt01_Albedo_png" name="DomePt01_Albedo_png">
-      <init_from>../materials/textures/DomePt01_Albedo.png</init_from>
+      <init_from>../materials/textures/DomePt01_Albedo.jpg</init_from>
     </image>
   </library_images>
   <library_materials>
