@@ -41,7 +41,7 @@
   </library_effects>
   <library_images>
     <image id="TubeNode_Albedo_png" name="TubeNode_Albedo_png">
-      <init_from>../materials/textures/TubeNode_Albedo.png</init_from>
+      <init_from>../materials/textures/TubeNode_Albedo.jpg</init_from>
     </image>
   </library_images>
   <library_materials>

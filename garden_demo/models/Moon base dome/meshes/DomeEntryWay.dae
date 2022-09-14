@@ -41,7 +41,7 @@
   </library_effects>
   <library_images>
     <image id="DomeGate_Albedo_png" name="DomeGate_Albedo_png">
-      <init_from>../materials/textures/DomeGate_Albedo.png</init_from>
+      <init_from>../materials/textures/DomeGate_Albedo.jpg</init_from>
     </image>
   </library_images>
   <library_materials>

@@ -23,10 +23,10 @@
           <specular>0.8 0.8 0.8 1</specular>
             <pbr>
               <metal>
-                <albedo_map>materials/textures/Fan_Albedo.png</albedo_map>
-                <normal_map>materials/textures/Fan_Normal.png</normal_map>
-                <roughness_map>materials/textures/Fan_Roughness.png</roughness_map>
-                <metalness_map>materials/textures/Fan_Metalness.png</metalness_map>
+                <albedo_map>materials/textures/Fan_Albedo.jpg</albedo_map>
+                <normal_map>materials/textures/Fan_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/Fan_Roughness.jpg</roughness_map>
+                <metalness_map>materials/textures/Fan_Metalness.jpg</metalness_map>
               </metal>
             </pbr>
         </material>

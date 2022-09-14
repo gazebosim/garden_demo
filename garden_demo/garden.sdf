@@ -49,8 +49,11 @@
         Moon base dome
       </uri>
       <experimental:params>
-        <collision element_id="main::DomePt01_collision" action="remove"/>
-        <collision element_id="main::DomePt02_collision" action="remove"/>
+        <collision element_id="Dome::DomePt01_collision" action="remove"/>
+        <collision element_id="Dome::DomePt02_collision" action="remove"/>
+        <collision element_id="Dome::InnerDome_collision" action="remove"/>
+        <collision element_id="main::InnerWallFrame_collision" action="remove"/>
+        <collision element_id="main::InnerWallUpper_collision" action="remove"/>
       </experimental:params>
     </include>
 

@@ -41,7 +41,7 @@
   </library_effects>
   <library_images>
     <image id="Door_Albedo_png" name="Door_Albedo_png">
-      <init_from>../materials/textures/Door_Albedo.png</init_from>
+      <init_from>../materials/textures/Door_Albedo.jpg</init_from>
     </image>
   </library_images>
   <library_materials>
