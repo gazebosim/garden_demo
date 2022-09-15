@@ -3,7 +3,7 @@
   <model name="gazebo_flag">
     <static>true</static>
     <link name="pole">
-      <visual name="visual">
+      <visual name="pole_visual">
         <pose>0 0 2.286.0 0 0 0</pose>
         <geometry>
           <cylinder>
@@ -22,7 +22,7 @@
           </pbr>
         </material>
       </visual>
-      <visual name="top">
+      <visual name="top_visual">
         <pose>0 0 4.572 0 0 0</pose>
         <geometry>
           <sphere>
@@ -40,10 +40,27 @@
           </pbr>
         </material>
       </visual>
+      <collision name="pole_collision">
+        <pose>0 0 2.286.0 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0381</radius>
+            <length>4.572</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name="top_collision">
+        <pose>0 0 4.572 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.06</radius>
+          </sphere>
+        </geometry>
+      </collision>
     </link>
     <link name="link">
       <pose>0.0 0.76 4.055 1.570796 0 1.570796</pose>
-      <visual name="visual">
+      <visual name="visual_side1">
         <geometry>
           <mesh>
             <uri>meshes/flag1cr.dae</uri>
@@ -179,7 +196,7 @@
             <name>light_dir</name>
             <type>float_array</type>
             <!-- shine light at flag -->
-            <value>1 0 0</value>
+            <value>1 0 0.1</value>
           </param>
           <param>
             <shader>fragment</shader>
@@ -189,6 +206,13 @@
           </param>
         </plugin>
       </visual>
-     </link>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>1.52 0.914 0.05</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
   </model>
 </sdf>

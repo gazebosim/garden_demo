@@ -6,7 +6,8 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>meshes/MoonBaseWater.dae</uri>
+            <!--<uri>meshes/MoonBaseWater.dae</uri>-->
+            <uri>meshes/waterplane.dae</uri>
             <!--<uri>meshes/mesh.dae</uri>
             <scale>0.2 0.2 1</scale>-->
           </mesh>
