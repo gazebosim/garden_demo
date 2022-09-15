@@ -65,7 +65,6 @@
     </include>
 
     <include>
-      <pose>0 0 0 0 0 0</pose>
       <uri>
         Garden heightmap
       </uri>
@@ -104,5 +103,13 @@
         Gazebo flag
       </uri>
     </include>
+
+    <include>
+      <pose>-24.2546 46.7498 1.6941 0 0 1.6941</pose>
+      <uri>
+        Garden Mascot
+      </uri>
+    </include>
+
   </world>
 </sdf>
