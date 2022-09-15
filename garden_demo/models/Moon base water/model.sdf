@@ -4,11 +4,10 @@
     <static>true</static>
     <link name="link">
       <visual name="visual">
+        <pose>0 0 0 0 0 -1.570796</pose>
         <geometry>
           <mesh>
             <uri>meshes/MoonBaseWater.dae</uri>
-            <!--<uri>meshes/mesh.dae</uri>
-            <scale>0.2 0.2 1</scale>-->
           </mesh>
         </geometry>
 
@@ -31,25 +30,25 @@
             <shader>vertex</shader>
             <name>rescale</name>
             <type>float</type>
-            <value>0.5</value>
+            <value>0.25</value>
           </param>
           <param>
             <shader>vertex</shader>
             <name>bumpScale</name>
             <type>float_array</type>
-            <value>10 10</value>
+            <value>30 30</value>
           </param>
           <param>
             <shader>vertex</shader>
             <name>bumpSpeed</name>
             <type>float_array</type>
-            <value>0.0001 0.0001</value>
+            <value>0.02 0.0</value>
           </param>
           <param>
             <shader>vertex</shader>
             <name>amplitude</name>
             <type>float_array</type>
-            <value>0.02 0.03, 0.06</value>
+            <value>0.02 0.04, 0.06</value>
           </param>
           <param>
             <shader>vertex</shader>
@@ -67,19 +66,19 @@
             <shader>vertex</shader>
             <name>dir0</name>
             <type>float_array</type>
-            <value>-1.0 0.0</value>
+            <value>1.0 0.0</value>
           </param>
           <param>
             <shader>vertex</shader>
             <name>dir1</name>
             <type>float_array</type>
-            <value>-0.7 0.7</value>
+            <value>0.7 0.3</value>
           </param>
           <param>
             <shader>vertex</shader>
             <name>dir2</name>
             <type>float_array</type>
-            <value>0.7 0.7</value>
+            <value>0.7 -0.3</value>
           </param>
           <param>
             <shader>vertex</shader>
