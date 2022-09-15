@@ -70,5 +70,8 @@ void main()
   finalColor += lightDiffuse * diffuseColor * NdotL;
   finalColor += lightSpecular * specularColor * specular;
 
+  // account for gamma correction
+  finalColor = finalColor * finalColor;
+
   fragColor = vec4(finalColor, 1.0);
 }
