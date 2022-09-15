@@ -98,5 +98,11 @@
       </experimental:params>
     </include>
 
+    <include>
+      <pose>0 77.5 3.52 0 0 0</pose>
+      <uri>
+        Gazebo flag
+      </uri>
+    </include>
   </world>
 </sdf>
