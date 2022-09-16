@@ -43,7 +43,6 @@
         <ambient_light>0.4 0.4 0.4</ambient_light>
         <background_color>0.8 0.8 0.8</background_color>
         <camera_pose>-122.595329 247.122665 140.111526 0 0.570824 -1.096719</camera_pose>
-        <!-- <camera_pose>-6 0 6 0 0.5 0</camera_pose> -->
         <camera_clip>
           <near>0.25</near>
           <far>25000</far>
