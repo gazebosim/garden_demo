@@ -97,6 +97,144 @@
       </experimental:params>
     </include>
 
+    <model name="Foucault pendulum">
+      <!--link name="support">
+	<inertial>
+          <mass>1000.</mass>
+          <inertia>
+            <ixx>750.8333</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>750.8333</iyy>
+            <iyz>0</iyz>
+            <izz>1500</izz>
+          </inertia>
+        </inertial>
+        <gravity>0</gravity>
+        <pose>0 0 55 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>3.0 3.0 0.1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>3.0 3.0 0.1</size>
+            </box>
+          </geometry>
+        </visual>
+      </link-->
+      <joint name="joint" type="ball">
+        <parent>world</parent>
+        <child>wire</child>
+      </joint>
+      <link name="wire">
+        <pose>0 0 60 0 1.0 0</pose>
+        <inertial>
+          <mass>0.5</mass>
+          <inertia>
+            <ixx>4.166666</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>4.166666</iyy>
+            <iyz>0</iyz>
+            <izz>4.166666</izz>
+          </inertia>
+        </inertial>
+	<collision name="collision">
+	  <pose>0 0 -25 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>50</length>
+              <radius>0.05</radius>
+            </cylinder>
+          </geometry>
+        </collision>
+	<visual name="visual">
+          <pose>0 0 -25 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>50</length>
+              <radius>0.05</radius>
+            </cylinder>
+          </geometry>
+        </visual>
+      </link>
+      <joint name="attachment" type="fixed">
+	<pose relative_to="wire">
+	    0 0 -50 0 0 0
+	</pose>
+        <parent>wire</parent>
+        <child>bob</child>
+      </joint>
+      <link name="bob">
+	<enable_wind>1</enable_wind>
+	<pose relative_to="attachment">
+	    0 0 -0.5 0 0 0
+	</pose>
+        <inertial>
+          <mass>100</mass>
+          <inertia>
+            <ixx>66.6666</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>66.6666</iyy>
+            <iyz>0</iyz>
+            <izz>66.6666</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <sphere>
+              <radius>1</radius>
+            </sphere>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <sphere>
+              <radius>1</radius>
+            </sphere>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+    <plugin
+      filename="gz-sim-wind-effects-system"
+      name="gz::sim::systems::WindEffects">
+      <force_approximation_scaling_factor>
+	<when ylt="-85.217">0</when>
+	<when yge="-85.217" xge="8.0">0</when>
+	<when yge="-85.217" xle="-8.0">0</when>
+	<when yge="-85.217" xlt="8.0" xgt="-8.0" zge="12.0">0</when>
+	<when yge="-85.217" xlt="8.0" xgt="-8.0" zle="0.0">0</when>
+	<when yge="-85.217" xlt="8.0" xgt="-8.0" zlt="12.0" zgt="0.0">0.5</when>
+      </force_approximation_scaling_factor>
+      <horizontal>
+        <magnitude>
+          <time_for_rise>1</time_for_rise>
+          <sin>
+            <amplitude_percent>1</amplitude_percent>
+            <period>20</period>
+          </sin>
+        </magnitude>
+        <direction>
+          <time_for_rise>1</time_for_rise>
+          <sin>
+            <amplitude>20</amplitude>
+            <period>10</period>
+          </sin>
+        </direction>
+      </horizontal>
+    </plugin>
+    <wind>
+      <linear_velocity>0 0.5 0</linear_velocity>
+    </wind>
+
     <include>
       <pose>0 77.5 3.52 0 0 0</pose>
       <uri>
