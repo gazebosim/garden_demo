@@ -302,9 +302,9 @@
       <diffuse>0.8 0.8 0.8 1</diffuse>
       <specular>0.8 0.8 0.8 1</specular>
       <attenuation>
-        <range>80</range>
+        <range>70</range>
         <constant>0.2</constant>
-        <linear>0.01</linear>
+        <linear>0.017</linear>
         <quadratic>0.0001</quadratic>
       </attenuation>
       <spot>
@@ -323,7 +323,7 @@
       <attenuation>
         <range>70</range>
         <constant>0.2</constant>
-        <linear>0.01</linear>
+        <linear>0.017</linear>
         <quadratic>0.0001</quadratic>
       </attenuation>
       <spot>
@@ -342,7 +342,7 @@
       <attenuation>
         <range>70</range>
         <constant>0.2</constant>
-        <linear>0.01</linear>
+        <linear>0.017</linear>
         <quadratic>0.0001</quadratic>
       </attenuation>
       <spot>
@@ -361,7 +361,7 @@
       <attenuation>
         <range>70</range>
         <constant>0.2</constant>
-        <linear>0.01</linear>
+        <linear>0.017</linear>
         <quadratic>0.0001</quadratic>
       </attenuation>
       <spot>
