@@ -41,12 +41,6 @@
         <material>
           <diffuse>1.0 1.0 1.0</diffuse>
           <emissive>1 1 1 1</emissive>
-<!--          <pbr>
-            <metal>
-              <emissive>1 1 1 1</emissive>
-            </metal>
-          </pbr>
--->
         </material>
       </visual>
     </link>
