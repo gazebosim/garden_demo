@@ -3,13 +3,15 @@
   <model name="garden_moon">
     <static>true</static>
     <pose>0 0 -5 0 0 0</pose>
+
     <link name="link">
+      <pose>0 0 0 0 0 0</pose>
       <collision name="collision">
         <geometry>
           <heightmap>
-            <uri>materials/textures/MoonHeightmap_8bit.png</uri>
-            <size>800 800 3</size>
-            <pos>0 0 -5</pos>
+            <uri>materials/textures/height4k_modified.png</uri>
+            <size>40960 40960 9177</size>
+            <pos>-3005.51 87.17 -7869.50</pos>
           </heightmap>
         </geometry>
       </collision>
@@ -18,13 +20,13 @@
           <heightmap>
             <use_terrain_paging>false</use_terrain_paging>
             <texture>
-              <diffuse>materials/textures/moon_diffuse.jpg</diffuse>
-              <normal>materials/textures/moon_normal.jpg</normal>
-              <size>800</size>
+              <diffuse>materials/textures/TerrainNew_Albedo.jpg</diffuse>
+              <normal>materials/textures/TerrainNew_Normal.jpg</normal>
+              <size>120</size>
             </texture>
-            <uri>materials/textures/MoonHeightmap_8bit.png</uri>
-            <size>800 800 3</size>
-            <pos>0 0 -5</pos>
+            <uri>materials/textures/height4k_modified.png</uri>
+            <size>40960 40960 9177</size>
+            <pos>-3005.51 87.17 -7869.50</pos>
           </heightmap>
         </geometry>
       </visual>

@@ -273,14 +273,8 @@
       <cast_shadows>true</cast_shadows>
       <pose>0 0 10 0 0 0</pose>
       <diffuse>0.8 0.8 0.8 1</diffuse>
-      <specular>0.2 0.2 0.2 1</specular>
-      <attenuation>
-        <range>1000</range>
-        <constant>0.9</constant>
-        <linear>0.01</linear>
-        <quadratic>0.001</quadratic>
-      </attenuation>
-      <direction>-1 0.0 -1</direction>
+      <specular>0.05 0.05 0.05 1</specular>
+      <direction>-1 0.0 -0.4</direction>
     </light>
 
     <light type="spot" name="dome_light">
@@ -289,95 +283,94 @@
       <diffuse>0.8 0.8 0.8 1</diffuse>
       <specular>0.8 0.8 0.8 1</specular>
       <attenuation>
-        <range>80</range>
-        <constant>0.2</constant>
-        <linear>0.01</linear>
+        <range>110</range>
+        <constant>0.0</constant>
+        <linear>0.001</linear>
         <quadratic>0.0001</quadratic>
       </attenuation>
       <spot>
-        <inner_angle>2.0</inner_angle>
+        <inner_angle>2.9</inner_angle>
         <outer_angle>3.1</outer_angle>
-        <falloff>0.2</falloff>
+        <falloff>0.0</falloff>
       </spot>
       <direction>0 0.0 -1</direction>
     </light>
 
     <light type="spot" name="dome_light_01">
       <cast_shadows>false</cast_shadows>
-      <pose>0 70 30 0 0 0</pose>
+      <pose>0 45 30 0 0 0</pose>
       <diffuse>0.8 0.8 0.8 1</diffuse>
       <specular>0.8 0.8 0.8 1</specular>
       <attenuation>
-        <range>80</range>
+        <range>70</range>
         <constant>0.2</constant>
-        <linear>0.01</linear>
+        <linear>0.017</linear>
         <quadratic>0.0001</quadratic>
       </attenuation>
       <spot>
         <inner_angle>2.0</inner_angle>
-        <outer_angle>3.1</outer_angle>
-        <falloff>0.2</falloff>
+        <outer_angle>2.5</outer_angle>
+        <falloff>0.6</falloff>
       </spot>
       <direction>0 0.0 -1</direction>
     </light>
 
     <light type="spot" name="dome_light_02">
       <cast_shadows>false</cast_shadows>
-      <pose>0 -70 30 0 0 0</pose>
+      <pose>0 -45 30 0 0 0</pose>
       <diffuse>0.8 0.8 0.8 1</diffuse>
       <specular>0.8 0.8 0.8 1</specular>
       <attenuation>
-        <range>80</range>
+        <range>70</range>
         <constant>0.2</constant>
-        <linear>0.01</linear>
+        <linear>0.017</linear>
         <quadratic>0.0001</quadratic>
       </attenuation>
       <spot>
         <inner_angle>2.0</inner_angle>
-        <outer_angle>3.1</outer_angle>
-        <falloff>0.2</falloff>
+        <outer_angle>2.5</outer_angle>
+        <falloff>0.6</falloff>
       </spot>
       <direction>0 0.0 -1</direction>
     </light>
 
     <light type="spot" name="dome_light_03">
       <cast_shadows>false</cast_shadows>
-      <pose>70 0 30 0 0 0</pose>
+      <pose>45 0 30 0 0 0</pose>
       <diffuse>0.8 0.8 0.8 1</diffuse>
       <specular>0.8 0.8 0.8 1</specular>
       <attenuation>
-        <range>80</range>
+        <range>70</range>
         <constant>0.2</constant>
-        <linear>0.01</linear>
+        <linear>0.017</linear>
         <quadratic>0.0001</quadratic>
       </attenuation>
       <spot>
         <inner_angle>2.0</inner_angle>
-        <outer_angle>3.1</outer_angle>
-        <falloff>0.2</falloff>
+        <outer_angle>2.5</outer_angle>
+        <falloff>0.6</falloff>
       </spot>
       <direction>0 0.0 -1</direction>
     </light>
 
     <light type="spot" name="dome_light_04">
       <cast_shadows>false</cast_shadows>
-      <pose>-70 0 30 0 0 0</pose>
+      <pose>-45 0 30 0 0 0</pose>
       <diffuse>0.8 0.8 0.8 1</diffuse>
       <specular>0.8 0.8 0.8 1</specular>
       <attenuation>
-        <range>80</range>
+        <range>70</range>
         <constant>0.2</constant>
-        <linear>0.01</linear>
+        <linear>0.017</linear>
         <quadratic>0.0001</quadratic>
       </attenuation>
       <spot>
         <inner_angle>2.0</inner_angle>
-        <outer_angle>3.1</outer_angle>
-        <falloff>0.2</falloff>
+        <outer_angle>2.5</outer_angle>
+        <falloff>0.6</falloff>
       </spot>
       <direction>0 0.0 -1</direction>
     </light>
-
 
     <include>
       <pose>0 0 0 0 0 0</pose>
