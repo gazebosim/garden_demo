@@ -642,6 +642,7 @@
           <pbr>
             <metal>
               <albedo_map>materials/textures/LakeIlsand_Albedo.jpg</albedo_map>
+              <metalness_map>materials/textures/LakeIlsand_Metalness.png</metalness_map>
               <normal_map>materials/textures/LakeIlsand_Normal.png</normal_map>
               <roughness_map>materials/textures/LakeIlsand_Roughness.png</roughness_map>
             </metal>
