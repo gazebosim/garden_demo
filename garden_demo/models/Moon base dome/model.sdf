@@ -736,13 +736,6 @@
         </material>
       </visual>
 
-      <collision name="Anthurium_collision">
-        <geometry>
-          <mesh>
-            <uri>meshes/Anthurium01.dae</uri>
-          </mesh>
-        </geometry>
-      </collision>
       <visual name="Anthurium_visual">
         <geometry>
           <mesh>
@@ -763,13 +756,6 @@
         </material>
       </visual>
 
-      <collision name="Calathea_collision">
-        <geometry>
-          <mesh>
-            <uri>meshes/Calathea01.dae</uri>
-          </mesh>
-        </geometry>
-      </collision>
       <visual name="Calathea_visual">
         <geometry>
           <mesh>
@@ -790,13 +776,6 @@
         </material>
       </visual>
 
-      <collision name="Fern_collision">
-        <geometry>
-          <mesh>
-            <uri>meshes/Fern02.dae</uri>
-          </mesh>
-        </geometry>
-      </collision>
       <visual name="Fern_visual">
         <geometry>
           <mesh>
@@ -817,13 +796,6 @@
         </material>
       </visual>
 
-      <collision name="Grass_collision">
-        <geometry>
-          <mesh>
-            <uri>meshes/Grass01.dae</uri>
-          </mesh>
-        </geometry>
-      </collision>
       <visual name="Grass_visual">
         <geometry>
           <mesh>
@@ -844,13 +816,6 @@
         </material>
       </visual>
 
-      <collision name="Leaves_collision">
-        <geometry>
-          <mesh>
-            <uri>meshes/Leaves01.dae</uri>
-          </mesh>
-        </geometry>
-      </collision>
       <visual name="Leaves_visual">
         <geometry>
           <mesh>
