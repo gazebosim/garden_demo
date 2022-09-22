@@ -372,6 +372,44 @@
       <direction>0 0.0 -1</direction>
     </light>
 
+    <light type="spot" name="tunnel_light_01">
+      <cast_shadows>false</cast_shadows>
+      <pose>0.2841 98.4191 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.8 0.8 0.8 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.2</constant>
+        <linear>0.2517</linear>
+        <quadratic>0.0001</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0.0</inner_angle>
+        <outer_angle>2.5</outer_angle>
+        <falloff>0.6</falloff>
+      </spot>
+      <direction>0 0.0 -1</direction>
+    </light>
+
+    <light type="spot" name="tunnel_light_02">
+      <cast_shadows>false</cast_shadows>
+      <pose>-0.0615 110.8810 7.8431 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.8 0.8 0.8 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.2</constant>
+        <linear>0.2517</linear>
+        <quadratic>0.0001</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0.0</inner_angle>
+        <outer_angle>2.5</outer_angle>
+        <falloff>0.6</falloff>
+      </spot>
+      <direction>0 0.0 -1</direction>
+    </light>
+
     <include>
       <pose>0 0 0 0 0 0</pose>
       <uri>
@@ -466,6 +504,18 @@
     <wind>
       <linear_velocity>0 0 2</linear_velocity>
     </wind>
+
+    <include>
+      <name>Fan4</name>
+      <pose>-65.9289 -0.0026 4.6064 1.5707963267948966 0 0</pose>
+      <uri>
+        Moon base fan blade
+      </uri>
+      <experimental:params>
+        <!-- the collision reduces RTF -->
+        <collision element_id="Fan::collision" action="remove"/>
+      </experimental:params>
+    </include>
 
     <include>
       <pose>0 77.5 3.52 0 0 0</pose>
