@@ -5,21 +5,31 @@
       <author>Blender User</author>
       <authoring_tool>Blender 3.2.1 commit date:2022-07-05, commit time:15:44, hash:a2d59b2dac9e</authoring_tool>
     </contributor>
-    <created>2022-09-13T17:40:45</created>
-    <modified>2022-09-13T17:40:45</modified>
+    <created>2022-09-21T15:00:54</created>
+    <modified>2022-09-21T15:00:54</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
   <library_effects>
     <effect id="LakeIlsand-effect">
       <profile_COMMON>
+        <newparam sid="LakeIlsand_Albedo_png-surface">
+          <surface type="2D">
+            <init_from>LakeIlsand_Albedo_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="LakeIlsand_Albedo_png-sampler">
+          <sampler2D>
+            <source>LakeIlsand_Albedo_png-surface</source>
+          </sampler2D>
+        </newparam>
         <technique sid="common">
           <lambert>
             <emission>
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <color sid="diffuse">0.8 0.8 0.8 1</color>
+              <texture texture="LakeIlsand_Albedo_png-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.45</float>
@@ -29,7 +39,11 @@
       </profile_COMMON>
     </effect>
   </library_effects>
-  <library_images/>
+  <library_images>
+    <image id="LakeIlsand_Albedo_png" name="LakeIlsand_Albedo_png">
+      <init_from>../materials/textures/LakeIlsand_Albedo.jpg</init_from>
+    </image>
+  </library_images>
   <library_materials>
     <material id="LakeIlsand-material" name="LakeIlsand">
       <instance_effect url="#LakeIlsand-effect"/>
@@ -81,9 +95,9 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="InnerTerrain" name="InnerTerrain" type="NODE">
+      <node id="LakeIsland" name="LakeIsland" type="NODE">
         <matrix sid="transform">71.09742 28.24381 0 0 -28.24467 71.09527 0 0 0 0 78.74271 0 0 0 0 1</matrix>
-        <instance_geometry url="#Plane_002-mesh" name="InnerTerrain">
+        <instance_geometry url="#Plane_002-mesh" name="LakeIsland">
           <bind_material>
             <technique_common>
               <instance_material symbol="LakeIlsand-material" target="#LakeIlsand-material">
