@@ -638,7 +638,7 @@
         <material>
           <ambient>0.8 0.8 0.8 1</ambient>
           <diffuse>0.8 0.8 0.8 1</diffuse>
-          <specular>0.8 0.8 0.8 1</specular>
+          <specular>0.01 0.01 0.01 1</specular>
           <pbr>
             <metal>
               <albedo_map>materials/textures/LakeIlsand_Albedo.jpg</albedo_map>
@@ -649,7 +649,6 @@
           </pbr>
         </material>
       </visual>
-
 
       <collision name="HexFanHousing1_collision">
         <geometry>
@@ -725,7 +724,7 @@
         <material>
           <ambient>0.8 0.8 0.8 1</ambient>
           <diffuse>0.8 0.8 0.8 1</diffuse>
-          <specular>0.8 0.8 0.8 1</specular>
+          <specular>0.02 0.02 0.02 1</specular>
           <pbr>
             <metal>
               <albedo_map>materials/textures/GrassAndSoil_Albedo.jpg</albedo_map>
@@ -834,7 +833,7 @@
         <material>
           <ambient>0.8 0.8 0.8 1</ambient>
           <diffuse>0.8 0.8 0.8 1</diffuse>
-          <specular>0.8 0.8 0.8 1</specular>
+          <specular>0.1 0.1 0.1 1</specular>
           <pbr>
             <metal>
               <albedo_map>materials/textures/Grass01_Albedo.png</albedo_map>
@@ -887,7 +886,7 @@
         <material>
           <ambient>0.8 0.8 0.8 1</ambient>
           <diffuse>0.8 0.8 0.8 1</diffuse>
-          <specular>0.8 0.8 0.8 1</specular>
+          <specular>0.2 0.2 0.2 1</specular>
           <pbr>
             <metal>
               <albedo_map>materials/textures/SmallBranch_Albedo.jpg</albedo_map>
