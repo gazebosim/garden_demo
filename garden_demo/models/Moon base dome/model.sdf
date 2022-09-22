@@ -639,18 +639,264 @@
           <ambient>0.8 0.8 0.8 1</ambient>
           <diffuse>0.8 0.8 0.8 1</diffuse>
           <specular>0.8 0.8 0.8 1</specular>
-          <!-- TODO add textures when ready -->
-          <!-- <pbr>
+          <pbr>
             <metal>
-              <albedo_map>materials/textures/LakeIsland_Albedo.jpg</albedo_map>
-              <metalness_map>materials/textures/LakeIsland_Metalness.png</metalness_map>
-              <normal_map>materials/textures/LakeIsland_Normal.jpg</normal_map>
-              <roughness_map>materials/textures/LakeIsland_Roughness.jpg</roughness_map>
+              <albedo_map>materials/textures/LakeIlsand_Albedo.jpg</albedo_map>
+              <metalness_map>materials/textures/LakeIlsand_Metalness.png</metalness_map>
+              <normal_map>materials/textures/LakeIlsand_Normal.png</normal_map>
+              <roughness_map>materials/textures/LakeIlsand_Roughness.png</roughness_map>
             </metal>
-          </pbr> -->
+          </pbr>
         </material>
       </visual>
 
+
+      <collision name="HexFanHousing1_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/HexFanHousing.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="HexFanHousing1_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/HexFanHousing.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/HexFanHousing_Albedo.jpg</albedo_map>
+              <metalness_map>materials/textures/HexFanHousing_Metalness.jpg</metalness_map>
+              <normal_map>materials/textures/HexFanHousing_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/HexFanHousing_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="HexFanHousing2_collision">
+        <pose degrees="true">0 0 0 0 0 180</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/HexFanHousing.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="HexFanHousing2_visual">
+        <pose degrees="true">0 0 0 0 0 180</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/HexFanHousing.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/HexFanHousing_Albedo.jpg</albedo_map>
+              <metalness_map>materials/textures/HexFanHousing_Metalness.jpg</metalness_map>
+              <normal_map>materials/textures/HexFanHousing_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/HexFanHousing_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="HexGarden_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/HexGarden.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="HexGarden_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/HexGarden.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/GrassAndSoil_Albedo.jpg</albedo_map>
+              <metalness_map>materials/textures/GrassAndSoil_Metalness.png</metalness_map>
+              <normal_map>materials/textures/GrassAndSoil_Normal.png</normal_map>
+              <roughness_map>materials/textures/GrassAndSoil_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="Anthurium_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/Anthurium01.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="Anthurium_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/Anthurium01.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/anthurium_Albedo.png</albedo_map>
+              <normal_map>materials/textures/anthurium01_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/anthurium01_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="Calathea_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/Calathea01.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="Calathea_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/Calathea01.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Calathea01_Albedo.png</albedo_map>
+              <normal_map>materials/textures/Calathea01_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/Calathea01_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="Fern_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/Fern02.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="Fern_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/Fern02.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Fern02_Albedo.png</albedo_map>
+              <normal_map>materials/textures/Fern02_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/Fern02_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="Grass_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/Grass01.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="Grass_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/Grass01.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Grass01_Albedo.png</albedo_map>
+              <normal_map>materials/textures/Grass01_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/Grass01_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="Leaves_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/Leaves01.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="Leaves_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/Leaves01.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Tree01_BranchLeaves_Albedo.png</albedo_map>
+              <roughness_map>materials/textures/Tree01_BranchLeaves_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="Tree_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/Tree01.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="Tree_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/Tree01.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/SmallBranch_Albedo.jpg</albedo_map>
+              <normal_map>materials/textures/SmallBranch_Normal.jpg</normal_map>
+              <roughness_map>materials/textures/SmallBranch_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
     </link>
 
     <link name="DoorLeft">

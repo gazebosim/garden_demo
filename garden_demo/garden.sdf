@@ -54,6 +54,11 @@
         <collision element_id="Dome::InnerDome_collision" action="remove"/>
         <collision element_id="main::InnerWallFrame_collision" action="remove"/>
         <collision element_id="main::InnerWallUpper_collision" action="remove"/>
+        <collision element_id="main::Anthurium_collision" action="remove"/>
+        <collision element_id="main::Calathea_collision" action="remove"/>
+        <collision element_id="main::Fern_collision" action="remove"/>
+        <collision element_id="main::Grass_collision" action="remove"/>
+        <collision element_id="main::Leaves_collision" action="remove"/>
       </experimental:params>
     </include>
 
@@ -105,7 +110,7 @@
     </include>
 
     <include>
-      <pose>-24.2546 46.7498 1.6941 0 0 1.6941</pose>
+      <pose>-75.8012 -0.2703 14.3177 0.0862 0.0287 1.5669</pose>
       <uri>
         Garden Mascot
       </uri>
