@@ -6,8 +6,8 @@
     <gravity>0 0 -1.62</gravity>
 
     <scene>
-      <ambient>1.0 1.0 1.0 1.0</ambient>
-      <background>0.8 0.8 0.8 1.0</background>
+      <ambient>0.0 0.0 0.0 0.0</ambient>
+      <background>0.0 0.0 0.0 1.0</background>
       <grid>false</grid>
     </scene>
 
@@ -40,12 +40,12 @@
 
         <engine>ogre2</engine>
         <scene>scene</scene>
-        <ambient_light>0.4 0.4 0.4</ambient_light>
-        <background_color>0.8 0.8 0.8</background_color>
+        <ambient_light>0.0 0.0 0.0</ambient_light>
+        <background_color>0.0 0.0 0.0</background_color>
         <camera_pose>-122.595329 247.122665 140.111526 0 0.570824 -1.096719</camera_pose>
         <camera_clip>
           <near>0.25</near>
-          <far>25000</far>
+          <far>1000000</far>
         </camera_clip>
       </plugin>
 
@@ -302,14 +302,103 @@
       <cast_shadows>true</cast_shadows>
       <pose>0 0 10 0 0 0</pose>
       <diffuse>0.8 0.8 0.8 1</diffuse>
-      <specular>0.2 0.2 0.2 1</specular>
+      <specular>0.05 0.05 0.05 1</specular>
+      <direction>-1 0.0 -0.4</direction>
+    </light>
+
+    <light type="spot" name="dome_light">
+      <cast_shadows>false</cast_shadows>
+      <pose>0 0 50 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.8 0.8 0.8 1</specular>
       <attenuation>
-        <range>1000</range>
-        <constant>0.9</constant>
-        <linear>0.01</linear>
-        <quadratic>0.001</quadratic>
+        <range>110</range>
+        <constant>0.0</constant>
+        <linear>0.001</linear>
+        <quadratic>0.0001</quadratic>
       </attenuation>
-      <direction>-0.5 0.1 -0.9</direction>
+      <spot>
+        <inner_angle>2.9</inner_angle>
+        <outer_angle>3.1</outer_angle>
+        <falloff>0.0</falloff>
+      </spot>
+      <direction>0 0.0 -1</direction>
+    </light>
+
+    <light type="spot" name="dome_light_01">
+      <cast_shadows>false</cast_shadows>
+      <pose>0 45 30 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.8 0.8 0.8 1</specular>
+      <attenuation>
+        <range>70</range>
+        <constant>0.2</constant>
+        <linear>0.017</linear>
+        <quadratic>0.0001</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>2.0</inner_angle>
+        <outer_angle>2.5</outer_angle>
+        <falloff>0.6</falloff>
+      </spot>
+      <direction>0 0.0 -1</direction>
+    </light>
+
+    <light type="spot" name="dome_light_02">
+      <cast_shadows>false</cast_shadows>
+      <pose>0 -45 30 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.8 0.8 0.8 1</specular>
+      <attenuation>
+        <range>70</range>
+        <constant>0.2</constant>
+        <linear>0.017</linear>
+        <quadratic>0.0001</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>2.0</inner_angle>
+        <outer_angle>2.5</outer_angle>
+        <falloff>0.6</falloff>
+      </spot>
+      <direction>0 0.0 -1</direction>
+    </light>
+
+    <light type="spot" name="dome_light_03">
+      <cast_shadows>false</cast_shadows>
+      <pose>45 0 30 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.8 0.8 0.8 1</specular>
+      <attenuation>
+        <range>70</range>
+        <constant>0.2</constant>
+        <linear>0.017</linear>
+        <quadratic>0.0001</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>2.0</inner_angle>
+        <outer_angle>2.5</outer_angle>
+        <falloff>0.6</falloff>
+      </spot>
+      <direction>0 0.0 -1</direction>
+    </light>
+
+    <light type="spot" name="dome_light_04">
+      <cast_shadows>false</cast_shadows>
+      <pose>-45 0 30 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.8 0.8 0.8 1</specular>
+      <attenuation>
+        <range>70</range>
+        <constant>0.2</constant>
+        <linear>0.017</linear>
+        <quadratic>0.0001</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>2.0</inner_angle>
+        <outer_angle>2.5</outer_angle>
+        <falloff>0.6</falloff>
+      </spot>
+      <direction>0 0.0 -1</direction>
     </light>
 
     <include>
@@ -335,7 +424,7 @@
 
     <include>
       <uri>
-        Garden heightmap
+        Garden moon
       </uri>
     </include>
 

@@ -71,6 +71,10 @@
             <vertex>materials/programs/flag_vs_330.glsl</vertex>
             <fragment>materials/programs/flag_fs_330.glsl</fragment>
           </shader>
+          <shader language="metal">
+            <vertex>materials/programs/flag_vs.metal</vertex>
+            <fragment>materials/programs/flag_fs.metal</fragment>
+          </shader>
           <param>
             <shader>vertex</shader>
             <name>worldviewproj_matrix</name>
@@ -139,10 +143,14 @@
             <uri>meshes/flag2cr.dae</uri>
           </mesh>
         </geometry>
-        <plugin filename="ignition-gazebo-shader-param-system" name="ignition::gazebo::systems::ShaderParam">
+        <plugin filename="gz-sim-shader-param-system" name="gz::sim::systems::ShaderParam">
           <shader language="glsl">
             <vertex>materials/programs/flag_vs_330.glsl</vertex>
             <fragment>materials/programs/flag_fs_330.glsl</fragment>
+          </shader>
+          <shader language="metal">
+            <vertex>materials/programs/flag_vs.metal</vertex>
+            <fragment>materials/programs/flag_fs.metal</fragment>
           </shader>
           <param>
             <shader>vertex</shader>
