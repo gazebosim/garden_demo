@@ -427,6 +427,47 @@
     </include>
 
     <include>
+      <name>Fan3</name>
+      <pose>65.9289 -0.0026 4.6064 1.5707963267948966 0 0</pose>
+      <uri>
+        Moon base fan blade
+      </uri>
+      <experimental:params>
+        <!-- the collision reduces RTF -->
+        <collision element_id="Fan::collision" action="remove"/>
+        <plugin element_id="gz::sim::systems::JointController" action="modify">
+          <initial_velocity>9</initial_velocity>
+        </plugin>
+      </experimental:params>
+    </include>
+
+    <plugin
+      filename="gz-sim-wind-effects-system"
+      name="gz::sim::systems::WindEffects">
+      <force_approximation_scaling_factor>
+        <when zgt="8.0" zlt="60.0" xlt="69.865" xgt="61.535" ylt="4.165" ygt="-4.165">
+          <k>0.9</k>
+          <rz>0 0 -0.019 1.14</rz>
+        </when>
+        <when zgt="8.0" zlt="60.0" xlt="69.865" xgt="61.535" yle="-4.165">0</when>
+        <when zgt="8.0" zlt="60.0" xlt="69.865" xgt="61.535" yge="4.165">0</when>
+        <when zgt="8.0" zlt="60.0" xge="69.865">0</when>
+        <when zgt="8.0" zlt="60.0" xle="4.165">0</when>
+        <when zge="60.0">0</when>
+        <when zle="8.0">0</when>
+      </force_approximation_scaling_factor>
+      <vertical>
+        <time_for_rise>1</time_for_rise>
+        <noise type="gaussian">
+          <stddev>2</stddev>
+        </noise>
+      </vertical>
+    </plugin>
+    <wind>
+      <linear_velocity>0 0 2</linear_velocity>
+    </wind>
+
+    <include>
       <pose>0 77.5 3.52 0 0 0</pose>
       <uri>
         Gazebo flag
@@ -439,6 +480,38 @@
         Garden Mascot
       </uri>
     </include>
+
+    <model name="Ball">
+      <pose>65.7 0 13 0 0 0</pose>
+      <link name="link">
+        <enable_wind>1</enable_wind>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.666666</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.666666</iyy>
+            <iyz>0</iyz>
+            <izz>0.666666</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <sphere>
+              <radius>1</radius>
+            </sphere>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <sphere>
+              <radius>1</radius>
+            </sphere>
+          </geometry>
+        </visual>
+      </link>
+    </model>
 
   </world>
 </sdf>
