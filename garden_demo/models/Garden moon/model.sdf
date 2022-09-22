@@ -6,7 +6,7 @@
 
     <link name="link">
       <pose>0 0 0 0 0 0</pose>
-      <collision name="collision">
+      <!-- <collision name="collision">
         <geometry>
           <heightmap>
             <uri>materials/textures/height4k_modified.png</uri>
@@ -14,7 +14,7 @@
             <pos>-3005.51 87.17 -7869.50</pos>
           </heightmap>
         </geometry>
-      </collision>
+      </collision> -->
       <visual name="visual">
         <geometry>
           <heightmap>
