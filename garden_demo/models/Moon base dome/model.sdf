@@ -864,7 +864,7 @@
     </link>
 
     <link name="DoorLeft">
-      <pose>1.087 117.589 5.195 0 0 0</pose>
+      <pose>0 117.589 5.195 0 0 0</pose>
       <collision name="collision">
         <geometry>
           <mesh>
@@ -895,7 +895,7 @@
     </link>
 
     <link name="DoorRight">
-      <pose>-1.087 117.589 5.195 3.14159 0 3.14159</pose>
+      <pose>0 117.589 5.195 3.14159 0 3.14159</pose>
       <collision name="collision">
         <geometry>
           <mesh>
