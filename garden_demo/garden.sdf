@@ -99,7 +99,7 @@
 
     <include>
       <name>Fan3</name>
-      <pose>65.7 0 7.3 1.5707963267948966 0 0</pose>
+      <pose>65.9289 -0.0026 4.6064 1.5707963267948966 0 0</pose>
       <uri>
         Moon base fan blade
       </uri>
