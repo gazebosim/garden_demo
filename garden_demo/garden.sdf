@@ -42,7 +42,7 @@
         <scene>scene</scene>
         <ambient_light>0.0 0.0 0.0</ambient_light>
         <background_color>0.0 0.0 0.0</background_color>
-        <camera_pose>-122.595329 247.122665 140.111526 0 0.570824 -1.096719</camera_pose>
+        <camera_pose>434.060120 105.624825 174.010178 0 0.095625 -3.103774</camera_pose>
         <camera_clip>
           <near>0.25</near>
           <far>1000000</far>
@@ -283,17 +283,27 @@
           </anchors>
         </ignition-gui>
 
-        <!-- overview of exterior -->
-        <keyframe type='cam_pose' pose="-122.595329 247.122665 140.111526 0 0.570824 -1.096719"/>
+        <!-- overview of exterior (althone) -->
+        <keyframe type='cam_pose' pose="434.060120 105.624825 174.010178 0 0.095625 -3.103774"/>
+        <keyframe type='cam_pose' pose="37.496552 178.348282 71.650681 0 0.445424 -1.867050"/>
 
-        <!-- before exterior ramp -->
-        <keyframe type='cam_pose' pose="1.051471 154.505646 4.314966 0 -0.049574 -1.584071"/>
-
-        <!-- entered tunnel -->
+        <!-- enter tunnel (althone) -->
+        <keyframe type='cam_pose' pose="0.2379 118.8487 5.0360 0 -0.049574 -1.584071"/>
         <keyframe type='cam_pose' pose="-0.104694 98.755867 7.199647 0 -0.049574 -1.584071"/>
 
-        <!-- flag -->
+        <!-- inner dome views (althone)-->
+        <keyframe type='cam_pose' pose="58.326717 11.576072 16.867136 0 0.425625 -1.900599"/>
+        <keyframe type='cam_pose' pose="-68.212418 -25.750956 21.023611 0 0.108826 1.007798"/>
+        <keyframe type='cam_pose' pose="66.799423 -36.016186 33.299290 0 0.445425 1.924860"/>
+
+        <!-- flag (brandon then ian)-->
         <keyframe type='cam_pose' pose="3.930702 78.555855 7.369277 0 -0.023174 -3.126842"/>
+
+        <!-- lake (ian) -->
+        <keyframe type='cam_pose' pose="-58.748069 -33.713611 14.534838 0.1023558 0.1897235 0.5463578"/>
+
+        <!-- floating ball (michel) -->
+        <keyframe type='cam_pose' pose="54.112648 9.684307 19.904329 0 0.551025 -0.703802"/>
       </plugin>
 
     </gui>
