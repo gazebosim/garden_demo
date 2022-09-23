@@ -42,13 +42,13 @@
             <shader>vertex</shader>
             <name>bumpSpeed</name>
             <type>float_array</type>
-            <value>0.02 0.0</value>
+            <value>0.015 0.0</value>
           </param>
           <param>
             <shader>vertex</shader>
             <name>amplitude</name>
             <type>float_array</type>
-            <value>0.02 0.04, 0.06</value>
+            <value>0.01 0.02, 0.03</value>
           </param>
           <param>
             <shader>vertex</shader>
