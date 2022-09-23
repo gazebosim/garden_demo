@@ -1,0 +1,113 @@
+<mujoco model="Panda">
+  <compiler eulerseq="XYZ"/>
+  <default>
+    <default class="unused"/>
+  </default>
+  <asset>
+    <texture name="grid" type="2d" builtin="checker" rgb1="0.10000000000000001 0.20000000000000001 0.29999999999999999" rgb2="0.20000000000000001 0.29999999999999999 0.40000000000000002" width="512" height="512"/>
+    <material name="grid" class="unused" texture="grid" texrepeat="1 1" texuniform="true" reflectance="0.20000000000000001"/>
+    <mesh name="link0" class="unused" file="link0-e814492c370eb5e09228004c06b116b687f4b0e5.stl" scale="1 1 1"/>
+    <texture name="link0_link0_BaseColor" type="2d" file="link0_link0_BaseColor-4e926a43f6a0a9bd1f3b1090c548241ce8e5fbcb.png" gridsize="1 1"/>
+    <material name="material_link0_link0_BaseColor" class="unused" texture="link0_link0_BaseColor" texrepeat="1 1" texuniform="true" emission="0" specular="1"/>
+    <mesh name="link1" class="unused" file="link1-bc9a841a5fe4fa7cbd20506abb44425c0405f392.stl" scale="1 1 1"/>
+    <texture name="link1_link1_BaseColor" type="2d" file="link1_link1_BaseColor-66667af9dfa71da1eb6013bdd84a673d193b47ee.png" gridsize="1 1"/>
+    <material name="material_link1_link1_BaseColor" class="unused" texture="link1_link1_BaseColor" texrepeat="1 1" texuniform="true" emission="0" specular="1"/>
+    <mesh name="link2" class="unused" file="link2-d5f0649e6f1f92f0248b4c8f14e2ff31024e56a9.stl" scale="1 1 1"/>
+    <texture name="link2_link2_BaseColor" type="2d" file="link2_link2_BaseColor-a6127c702fa27cadc652cc61fd04eb697f452ced.png" gridsize="1 1"/>
+    <material name="material_link2_link2_BaseColor" class="unused" texture="link2_link2_BaseColor" texrepeat="1 1" texuniform="true" emission="0" specular="1"/>
+    <mesh name="link3" class="unused" file="link3-353b9be03f0aa8bc685a7dc2d21b32be86f41425.stl" scale="1 1 1"/>
+    <texture name="link3_link3_BaseColor" type="2d" file="link3_link3_BaseColor-eb8fbc142c0b2ac1e64ccae1561258da484da6c9.png" gridsize="1 1"/>
+    <material name="material_link3_link3_BaseColor" class="unused" texture="link3_link3_BaseColor" texrepeat="1 1" texuniform="true" emission="0" specular="1"/>
+    <mesh name="link4" class="unused" file="link4-383b5f4c78dc099107659f1b53d120afe1961edf.stl" scale="1 1 1"/>
+    <texture name="link4_link4_BaseColor" type="2d" file="link4_link4_BaseColor-c8ef8b594f2875e0b95562dd363148afc4983fd1.png" gridsize="1 1"/>
+    <material name="material_link4_link4_BaseColor" class="unused" texture="link4_link4_BaseColor" texrepeat="1 1" texuniform="true" emission="0" specular="1"/>
+    <mesh name="link5" class="unused" file="link5-3189f22e2bce35355afc50b7908865a0ea6cb139.stl" scale="1 1 1"/>
+    <texture name="link5_link5_BaseColor" type="2d" file="link5_link5_BaseColor-2c3e8a8f8288e2f7625a55f75622cf2597db1f88.png" gridsize="1 1"/>
+    <material name="material_link5_link5_BaseColor" class="unused" texture="link5_link5_BaseColor" texrepeat="1 1" texuniform="true" emission="0" specular="1"/>
+    <mesh name="link6" class="unused" file="link6-60893b0a31b9874a5038a2cea9a8d3e2e21e0c72.stl" scale="1 1 1"/>
+    <texture name="link6_link6_BaseColor" type="2d" file="link6_link6_BaseColor-c754e6ec2fc82f50acf1a99ac5fd32c454168f9c.png" gridsize="1 1"/>
+    <material name="material_link6_link6_BaseColor" class="unused" texture="link6_link6_BaseColor" texrepeat="1 1" texuniform="true" emission="0" specular="1"/>
+    <mesh name="link7" class="unused" file="link7-c22a70d03597090a8bec2b9bd98e8679ed00daa0.stl" scale="1 1 1"/>
+    <texture name="link7_link7_BaseColor" type="2d" file="link7_link7_BaseColor-a674762a2edc0d7386b5acf7ee376451977f7470.png" gridsize="1 1"/>
+    <material name="material_link7_link7_BaseColor" class="unused" texture="link7_link7_BaseColor" texrepeat="1 1" texuniform="true" emission="0" specular="1"/>
+    <mesh name="hand" class="unused" file="hand-8f29b446afc79b83773eebf116721c6de214de9e.stl" scale="1 1 1"/>
+    <texture name="hand_hand_BaseColor" type="2d" file="hand_hand_BaseColor-a3ba31fd09a352cf39ad8e38017955782e5edd5b.png" gridsize="1 1"/>
+    <material name="material_hand_hand_BaseColor" class="unused" texture="hand_hand_BaseColor" texrepeat="1 1" texuniform="true" emission="0" specular="1"/>
+    <mesh name="finger" class="unused" file="finger-df4d62044250c445aca8bef15ea2bf873072dbfa.stl" scale="1 1 1"/>
+    <texture name="finger_finger_BaseColor" type="2d" file="finger_finger_BaseColor-0775697eaa15603d4978b631285356a9c07a2c7c.png" gridsize="1 1"/>
+    <material name="material_finger_finger_BaseColor" class="unused" texture="finger_finger_BaseColor" texrepeat="1 1" texuniform="true" emission="0" specular="1"/>
+  </asset>
+  <worldbody>
+    <geom name="floor" class="unused" type="plane" condim="3" size="0 0 0.050000000000000003" material="grid" pos="0 0 0"/>
+    <body name="panda_link0" pos="0 0 0" euler="0 -0 0">
+      <inertial pos="-0.025565999999999998 -2.87883e-05 0.057332000000000001" mass="2.8142713001040618" fullinertia="0.0075390636364814695 0.010508017427382959 0.0098649336387082748 -1.5053124574783335e-05 -0.0012144328835738973 1.0434803501032979e-05"/>
+      <geom name="panda_link0_collision" class="unused" type="mesh" group="3" friction="1.05 0.0050000000000000001 0.0001" pos="0 0 0" euler="0 -0 0" mesh="link0"/>
+      <geom name="panda_link0_visual" class="unused" type="mesh" contype="0" conaffinity="0" group="0" material="material_link0_link0_BaseColor" pos="0 0 0" euler="0 -0 0" mesh="link0"/>
+      <body name="panda_link1" pos="0 0 0.33300000000000002" euler="0 -0 0">
+        <inertial pos="-3.72212e-09 -0.032495799999999998 -0.067581799999999997" mass="2.6433170427227215" fullinertia="0.017405076982879724 0.015352077935781732 0.0059878916630738566 -8.6879863696210777e-09 -1.6277819062920423e-08 0.0045108559591022449"/>
+        <geom name="panda_link1_collision" class="unused" type="mesh" group="3" friction="1.05 0.0050000000000000001 0.0001" pos="0 0 0" euler="0 -0 0" mesh="link1"/>
+        <geom name="panda_link1_visual" class="unused" type="mesh" contype="0" conaffinity="0" group="0" material="material_link1_link1_BaseColor" pos="0 0 0" euler="0 -0 0" mesh="link1"/>
+        <joint name="panda_joint1" class="unused" type="hinge" pos="0 0 0" axis="0 0 1" limited="true" range="-166 166" damping="21.75" frictionloss="3.48"/>
+        <body name="panda_link2" pos="0 0 0" euler="-90.000000000000028 0 0">
+          <inertial pos="3.1783300000000001e-07 -0.068610000000000004 0.0322285" mass="2.6652755331661186" fullinertia="0.017786940056353829 0.0060441338679528443 0.015710955004556951 8.7063562587911901e-08 3.7520720583940079e-08 -0.0045994902954903756"/>
+          <geom name="panda_link2_collision" class="unused" type="mesh" group="3" friction="1.05 0.0050000000000000001 0.0001" pos="0 0 -2.7755575615628914e-17" euler="0 -0 0" mesh="link2"/>
+          <geom name="panda_link2_visual" class="unused" type="mesh" contype="0" conaffinity="0" group="0" material="material_link2_link2_BaseColor" pos="0 0 -2.7755575615628914e-17" euler="0 -0 0" mesh="link2"/>
+          <joint name="panda_joint2" class="unused" type="hinge" pos="0 0 -2.7755575615628914e-17" axis="0 0 1" limited="true" range="-101.00000000000001 101.00000000000001" damping="21.75" frictionloss="3.48"/>
+          <body name="panda_link3" pos="0 -0.316 0" euler="90.000000000000028 -0 0">
+            <inertial pos="0.046989299999999998 0.031637400000000003 -0.031704000000000003" mass="2.3293714829045733" fullinertia="0.0075496764161139766 0.0096806760801913978 0.0079445574220080861 -0.0024320464513492225 -0.003250815048103007 -0.0021316282421730694"/>
+            <geom name="panda_link3_collision" class="unused" type="mesh" group="3" friction="1.05 0.0050000000000000001 0.0001" pos="0 0 0" euler="0 -0 0" mesh="link3"/>
+            <geom name="panda_link3_visual" class="unused" type="mesh" contype="0" conaffinity="0" group="0" material="material_link3_link3_BaseColor" pos="0 0 0" euler="0 -0 0" mesh="link3"/>
+            <joint name="panda_joint3" class="unused" type="hinge" pos="0 0 0" axis="0 0 1" limited="true" range="-166 166" damping="21.75" frictionloss="3.48"/>
+            <body name="panda_link4" pos="0.082500000000000004 0 0" euler="90.000000000000028 -0 0">
+              <inertial pos="-0.036050499999999999 0.033706899999999998 0.031901899999999997" mass="2.3104763646281508" fullinertia="0.0077645688148648279 0.0080157769299801489 0.0099558823080710662 0.0033714752040459352 -0.0023436211131682479 0.0022917526161470624"/>
+              <geom name="panda_link4_collision" class="unused" type="mesh" group="3" friction="1.05 0.0050000000000000001 0.0001" pos="0 0 0" euler="0 -0 0" mesh="link4"/>
+              <geom name="panda_link4_visual" class="unused" type="mesh" contype="0" conaffinity="0" group="0" material="material_link4_link4_BaseColor" pos="0 0 0" euler="0 -0 0" mesh="link4"/>
+              <joint name="panda_joint4" class="unused" type="hinge" pos="0 0 0" axis="0 0 1" limited="true" range="-176 -4" damping="21.75" frictionloss="3.48"/>
+              <body name="panda_link5" pos="-0.082500000000000004 0.3839999999999999 1.1102230246251565e-16" euler="-90.000000000000028 0 0">
+                <inertial pos="-6.1252500000000004e-06 0.061042699999999998 -0.104176" mass="2.6226426154892004" fullinertia="0.029070538014399377 0.027638529986528795 0.0042511112344007368 6.2087382687255679e-07 -1.0059151925023392e-05 -0.0074243064778508139"/>
+                <geom name="panda_link5_collision" class="unused" type="mesh" group="3" friction="1.05 0.0050000000000000001 0.0001" pos="0 0 0" euler="0 -0 0" mesh="link5"/>
+                <geom name="panda_link5_visual" class="unused" type="mesh" contype="0" conaffinity="0" group="0" material="material_link5_link5_BaseColor" pos="0 0 0" euler="0 -0 0" mesh="link5"/>
+                <joint name="panda_joint5" class="unused" type="hinge" pos="0 0 0" axis="0 0 1" limited="true" range="-166 166" damping="3" frictionloss="0.47999999999999998"/>
+                <body name="panda_link6" pos="0 0 0" euler="90.000000000000028 -0 0">
+                  <inertial pos="0.051050999999999999 0.00910797 0.010634299999999999" mass="1.5025804886626795" fullinertia="0.002940555801469018 0.0039210520124867698 0.0054115603870960195 -0.00042391108351381507 0.00061000773533871698 0.00012647545430836214"/>
+                  <geom name="panda_link6_collision" class="unused" type="mesh" group="3" friction="1.05 0.0050000000000000001 0.0001" pos="0 -2.2204460492503131e-16 1.1102230246251565e-16" euler="0 -0 0" mesh="link6"/>
+                  <geom name="panda_link6_visual" class="unused" type="mesh" contype="0" conaffinity="0" group="0" material="material_link6_link6_BaseColor" pos="0 -2.2204460492503131e-16 1.1102230246251565e-16" euler="0 -0 0" mesh="link6"/>
+                  <joint name="panda_joint6" class="unused" type="hinge" pos="0 -2.2204460492503131e-16 1.1102230246251565e-16" axis="0 0 1" limited="true" range="-1.0000000000000002 215.00000000000003" damping="3" frictionloss="0.47999999999999998"/>
+                  <body name="panda_link7" pos="0.087999999999999995 -2.2204460492503131e-16 1.1102230246251565e-16" euler="90.000000000000028 -0 0">
+                    <inertial pos="0.0109695 0.010796500000000001 0.065041199999999993" mass="0.52376681347882559" fullinertia="0.00086214679597265351 0.00086131001848010482 0.00069611393966182193 -0.00011871071570425467 3.8666026045093388e-05 -9.0578416494227235e-05"/>
+                    <geom name="panda_link7_collision" class="unused" type="mesh" group="3" friction="1.05 0.0050000000000000001 0.0001" pos="0 0 0" euler="0 -0 0" mesh="link7"/>
+                    <geom name="panda_link7_visual" class="unused" type="mesh" contype="0" conaffinity="0" group="0" material="material_link7_link7_BaseColor" pos="0 0 0" euler="0 -0 0" mesh="link7"/>
+                    <joint name="panda_joint7" class="unused" type="hinge" pos="0 0 0" axis="0 0 1" limited="true" range="-166 166" damping="3" frictionloss="0.47999999999999998"/>
+                    <body name="panda_hand" pos="0 -1.2700951401711792e-16 0.10699999999999998" euler="9.6053466751443351e-15 3.5554481841546742e-15 -45.000000000000007">
+                      <inertial pos="-6.7623999999999998e-06 0.0015243500000000001 0.0275912" mass="0.14060765127978503" fullinertia="0.00053654504143520719 7.7051195478372697e-05 0.00049381768826949144 1.7911952957732454e-08 -2.320071910601251e-08 4.6811499453159667e-08"/>
+                      <geom name="panda_hand_collision" class="unused" type="mesh" group="3" friction="1.05 0.0050000000000000001 0.0001" pos="0 0 0" euler="0 -0 9.5340376037883423e-30" mesh="hand"/>
+                      <geom name="panda_hand_visual" class="unused" type="mesh" contype="0" conaffinity="0" group="0" material="material_hand_hand_BaseColor" pos="0 0 0" euler="0 -0 9.5340376037883423e-30" mesh="hand"/>
+                      <body name="panda_leftfinger" pos="-6.9388939039072284e-18 2.0816681711721685e-17 0.058400000000000007" euler="0 -0 9.5340376037883423e-30">
+                        <inertial pos="-6.2561000000000001e-06 0.0022778099999999999 -0.027711599999999999" mass="0.2238453537819424" fullinertia="6.7480416736369505e-05 6.6271892216413953e-05 1.550396267804825e-05 -4.1027443646025676e-09 1.8693673970152995e-08 1.1967548474390802e-05"/>
+                        <geom name="panda_leftfinger_collision" class="unused" type="mesh" group="3" friction="2.1499999999999999 0.0050000000000000001 0.0001" pos="6.9388939039072284e-18 6.9388939039072284e-18 -2.2204460492503131e-16" euler="0 -0 9.5340376037883423e-30" mesh="finger"/>
+                        <geom name="panda_leftfinger_visual" class="unused" type="mesh" contype="0" conaffinity="0" group="0" material="material_finger_finger_BaseColor" pos="6.9388939039072284e-18 6.9388939039072284e-18 -2.2204460492503131e-16" euler="0 -0 9.5340376037883423e-30" mesh="finger"/>
+                        <joint name="panda_finger_joint1" class="unused" type="slide" pos="6.9388939039072284e-18 6.9388939039072284e-18 -2.2204460492503131e-16" axis="-3.3280069439011436e-31 1 0" limited="true" range="0 0.040000000000000001" damping="10" frictionloss="0.5"/>
+                      </body>
+                      <body name="panda_rightfinger" pos="-6.9388939039072284e-18 2.0816681711721685e-17 0.058400000000000007" euler="0 -0 9.5340376037883423e-30">
+                        <inertial pos="-6.2561000000000001e-06 0.0022778099999999999 -0.027711599999999999" mass="0.2238453537819424" fullinertia="6.7480416736369505e-05 6.6271892216413953e-05 1.550396267804825e-05 -4.1027443646027156e-09 -1.869367397015446e-08 -1.1967548474390802e-05"/>
+                        <geom name="panda_rightfinger_collision" class="unused" type="mesh" group="3" friction="2.1499999999999999 0.0050000000000000001 0.0001" pos="6.9388939039072284e-18 6.9388939039072284e-18 -2.2204460492503131e-16" euler="0 -0 180" mesh="finger"/>
+                        <geom name="panda_rightfinger_visual" class="unused" type="mesh" contype="0" conaffinity="0" group="0" material="material_finger_finger_BaseColor" pos="6.9388939039072284e-18 6.9388939039072284e-18 -2.2204460492503131e-16" euler="0 -0 180" mesh="finger"/>
+                        <joint name="panda_finger_joint2" class="unused" type="slide" pos="6.9388939039072284e-18 6.9388939039072284e-18 -2.2204460492503131e-16" axis="3.3280069439011436e-31 -1 0" limited="true" range="0 0.040000000000000001" damping="10" frictionloss="0.5"/>
+                      </body>
+                      <body name="panda_link8" pos="-6.2450045135165055e-17 7.6327832942979512e-17 0.10299999999999998" euler="0 -0 9.5340376037883423e-30">
+                        <inertial pos="0 0 0" mass="1" fullinertia="1 1 1 0 0 0"/>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <contact>
+    <exclude name="panda_link0_panda_link1" body1="panda_link0" body2="panda_link1"/>
+  </contact>
+</mujoco>
