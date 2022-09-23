@@ -288,7 +288,7 @@
         <keyframe type='cam_pose' pose="37.496552 178.348282 71.650681 0 0.445424 -1.867050"/>
 
         <!-- enter tunnel (althone) -->
-        <keyframe type='cam_pose' pose="0.2379 118.8487 5.0360 0 -0.049574 -1.584071"/>
+        <keyframe type='cam_pose' pose="0.0024666 116.539413 4.9599771 0 -0.049574 -1.584071"/>
         <keyframe type='cam_pose' pose="-0.104694 98.755867 7.199647 0 -0.049574 -1.584071"/>
 
         <!-- inner dome views (althone)-->
