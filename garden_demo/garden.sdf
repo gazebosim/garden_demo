@@ -464,7 +464,7 @@
     </include>
 
     <include>
-      <pose>0 0 0 0 0 0</pose>
+      <pose>0 0 -0.05 0 0 0</pose>
       <uri>
         Moon base water
       </uri>
