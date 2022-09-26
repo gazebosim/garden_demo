@@ -11,7 +11,7 @@
           <heightmap>
             <uri>materials/textures/height4k_modified.png</uri>
             <size>40960 40960 9177</size>
-            <pos>-3005.41 86.0 -7869.68</pos>
+            <pos>-3005.41 86.0 -7869.73</pos>
           </heightmap>
         </geometry>
       </collision> -->
@@ -26,7 +26,7 @@
             </texture>
             <uri>materials/textures/height4k_modified.png</uri>
             <size>40960 40960 9177</size>
-            <pos>-3005.41 86.0 -7869.68</pos>
+            <pos>-3005.41 86.0 -7869.73</pos>
           </heightmap>
         </geometry>
       </visual>
