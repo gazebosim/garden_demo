@@ -572,7 +572,7 @@
     </model>
 
     <include>
-      <pose>58 -11 5.2   0 0 3.14</pose>
+      <pose>-77.1886 0.2825 14.4945 0 0 0</pose>
       <uri>
         Humanoid from MJCF
       </uri>
