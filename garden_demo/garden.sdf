@@ -275,6 +275,7 @@
       <diffuse>0.8 0.8 0.8 1</diffuse>
       <specular>0.05 0.05 0.05 1</specular>
       <direction>-1 0.0 -0.4</direction>
+      <visualize>false</visualize>
     </light>
 
     <light type="spot" name="dome_light">
@@ -294,6 +295,7 @@
         <falloff>0.0</falloff>
       </spot>
       <direction>0 0.0 -1</direction>
+      <visualize>false</visualize>
     </light>
 
     <light type="spot" name="dome_light_01">
@@ -313,6 +315,7 @@
         <falloff>0.6</falloff>
       </spot>
       <direction>0 0.0 -1</direction>
+      <visualize>false</visualize>
     </light>
 
     <light type="spot" name="dome_light_02">
@@ -332,6 +335,7 @@
         <falloff>0.6</falloff>
       </spot>
       <direction>0 0.0 -1</direction>
+      <visualize>false</visualize>
     </light>
 
     <light type="spot" name="dome_light_03">
@@ -351,6 +355,7 @@
         <falloff>0.6</falloff>
       </spot>
       <direction>0 0.0 -1</direction>
+      <visualize>false</visualize>
     </light>
 
     <light type="spot" name="dome_light_04">
@@ -370,6 +375,7 @@
         <falloff>0.6</falloff>
       </spot>
       <direction>0 0.0 -1</direction>
+      <visualize>false</visualize>
     </light>
 
     <light type="spot" name="tunnel_light_01">
@@ -389,6 +395,7 @@
         <falloff>0.6</falloff>
       </spot>
       <direction>0 0.0 -1</direction>
+      <visualize>false</visualize>
     </light>
 
     <light type="spot" name="tunnel_light_02">
@@ -408,6 +415,7 @@
         <falloff>0.6</falloff>
       </spot>
       <direction>0 0.0 -1</direction>
+      <visualize>false</visualize>
     </light>
 
     <include>
@@ -425,7 +433,7 @@
     </include>
 
     <include>
-      <pose>0 0 0 0 0 0</pose>
+      <pose>0 0 -0.05 0 0 0</pose>
       <uri>
         Moon base water
       </uri>
