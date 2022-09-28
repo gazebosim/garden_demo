@@ -571,5 +571,11 @@
       </link>
     </model>
 
+    <include>
+      <pose>-77.1886 0.2825 14.4945 0 0 0</pose>
+      <uri>
+        Humanoid from MJCF
+      </uri>
+    </include>
   </world>
 </sdf>
