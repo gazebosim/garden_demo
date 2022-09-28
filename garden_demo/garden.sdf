@@ -304,6 +304,9 @@
 
         <!-- floating ball (michel) -->
         <keyframe type='cam_pose' pose="54.112648 9.684307 19.904329 0 0.551025 -0.703802"/>
+
+        <!-- reset & mujoco (michael caroll then addisu) -->
+        <keyframe type='cam_pose' pose="-68.208305 3.722506 19.806673 0.1938373 0.576818 -2.835106"/>
       </plugin>
 
     </gui>
